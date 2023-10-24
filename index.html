@@ -7,13 +7,28 @@
     <title>Preact Test</title>
   </head>
   <body>
+    <div id="app"></div>
+
     <script type="module">
       import { h, Component, render } from "https://esm.sh/preact";
+      import htm from "https://esm.sh/htm";
 
-      // Create your app
-      const app = h("h1", null, "Hello World!");
+      // Initialize htm with Preact
+      const html = htm.bind(h);
 
-      render(app, document.body);
+      class App extends Component {
+        render() {
+          return html`<h1>Hello, world!</h1>`;
+        }
+      }
+
+      render(html`<App />`, document.getElementById("app"));
+
+      // function App(props) {
+      //   return html`<h1>Hello ${props.name}!</h1>`;
+      // }
+
+      // render(html`<${App} name="World" />`, document.getElementById("app"));
     </script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 {
   "name": "create-react-phaser3-app",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

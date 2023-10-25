@@ -1,13 +1,13 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
-import phaserGame from './PhaserGame'
-import HelloWorldScene from './scenes/HelloWorldScene'
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import phaserGame from "./PhaserGame";
+import HelloWorldScene from "./scenes/HelloWorldScene";
 
 const handleClick = () => {
-  const scene = phaserGame.scene.keys.helloworld as HelloWorldScene
-  scene.createEmitter()
-}
+  const scene = phaserGame.scene.keys.helloworld as HelloWorldScene;
+  scene.createEmitter();
+};
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <p>Just a vanilla create-react-app overlaying a Phaser canvas :)</p>
         <a
           className="App-link"
-          href="https://github.com/kevinshen56714/create-react-phaser3-app"
+          href="https://github.com/inventorDrizzt/PhaserReactTest"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -28,7 +28,7 @@ function App() {
         </button>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
